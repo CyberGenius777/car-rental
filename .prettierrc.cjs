@@ -1,41 +1,41 @@
 /** @type {import('prettier').Config} */
 
 module.exports = {
-  arrowParens: "always",
+  arrowParens: 'always',
   printWidth: 120,
   jsxSingleQuote: true,
   jsxBracketSameLine: false,
-  endOfLine: "lf",
+  endOfLine: 'lf',
   semi: false,
   singleQuote: true,
-  tabWidth: 4,
+  tabWidth: 2,
   useTabs: false,
-  trailingComma: "all",
+  trailingComma: 'all',
   overrides: [
     {
-      files: ["*.js", "*.ts", "*.jsx", "*.tsx"],
+      files: ['*.js', '*.ts', '*.jsx', '*.tsx'],
       options: {
-        parser: "typescript",
+        parser: 'typescript',
       },
     },
     {
-      files: ["*.md"],
+      files: ['*.md'],
       options: {
-        parser: "markdown",
+        parser: 'markdown',
       },
     },
     {
-      files: ["*.json", ".prettierrc"],
+      files: ['*.json'],
       options: {
-        parser: "json",
+        parser: 'json',
       },
     },
     {
-      files: ["*.yml", "*.yaml"],
+      files: ['*.yml', '*.yaml'],
       options: {
         tabWidth: 2,
         singleQuote: false,
       },
     },
   ],
-};
+}
